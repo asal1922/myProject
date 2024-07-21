@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Model2 from './pages/learning/changeColor/model2';
 import Experience from './pages/learning/changeColor/Experience';
 import { CustomizationProvider } from './chair-model';
+import Manster from './manster';
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
         </div>
         <div className='model'>
           <Experience />
+        </div>
+        <div className='model'>
+          <Manster />
         </div>
       </div>
     </CustomizationProvider>
