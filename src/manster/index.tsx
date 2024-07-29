@@ -8,6 +8,7 @@ const Manster = () => {
 
     return (
         <div className="h-[100vh] bg-slate-600">
+            <div className="w-1/2 h-3/5 bg-black">
             <Canvas>
                 <ambientLight />
                 <pointLight intensity={2} position={[-1, 1, 3]} color="red" />
@@ -17,11 +18,13 @@ const Manster = () => {
                 <OrbitControls />
                 <MonsterModal anime={anime} />
             </Canvas>
+            </div>
             <div className='bg-slate-700 text-3xl font-extrabold'>
                 <p onClick={() => setAnime("Typing")}>Typing</p>
-                <p onClick={() => setAnime("dance")}>dance</p>
+                {/* <p onClick={() => setAnime("dance")}>dance</p> */}
                 <p onClick={() => setAnime("standing")}>standing</p>
             </div>
+
         </div>
     )
 }

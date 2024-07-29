@@ -13,6 +13,7 @@ const Home = () => {
                 </group>
 
             </Canvas>
+       
         </div>
 
     )
